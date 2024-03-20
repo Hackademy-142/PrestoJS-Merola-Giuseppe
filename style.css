@@ -1,0 +1,92 @@
+body{
+    margin-top: 120px;
+    background-color: var(--color-P);
+}
+
+:root{
+    --color-P: #404040;
+    --color-S: white;
+    --color-A: #9F2C73;
+}
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+.title{
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.logo{
+    width: 150px;
+}
+
+.navbar{
+    background-color: var(--color-P);
+}
+
+.transition{
+    transition: 0.7s;
+}
+
+/* NAVBAR  */
+.nav-scrolled {
+    margin: 5vh 2vw;
+    background-color: var(--color-P) !important;
+    backdrop-filter: blur(10px);
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.img_hero{
+    max-width: 450px;
+    border: 2px solid var(--color-A);
+    border-radius: 20px;
+    padding: 4px;
+    transform: rotate(15deg);
+}
+
+.sez_hero{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.bottone_custom{
+    color: white;
+    border: 1px solid var(--color-A);
+}
+
+.img-category{
+    border: 2px solid var(--color-A);
+    border-radius: 20px;
+    padding: 4px;
+}
+
+.bordo_nome{
+    border-bottom: 2px solid var(--color-A);
+    width: 60%;
+    margin-left: 20%;
+    padding-bottom: 5px;  
+}
+
+.sez_numeri{
+    height: 60vh;
+}
+
+.box_numeri{
+    border: 2px solid var(--color-A);
+    border-radius: 20px;
+    padding-top: 15px;
+    height: 130px;
+    width: 200px;
+}
+
+.lista_footer{
+    text-decoration: none;
+}
+
+
+
