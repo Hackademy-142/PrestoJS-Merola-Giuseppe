@@ -1,0 +1,79 @@
+[
+    {
+        "nome": "Riflessi Urbani",
+        "artista": "Maria Rossi",
+        "prezzo": 500,
+        "categoria": "Astratto",
+        "img" : "https://picsum.photos/200"
+    },
+    {
+        "nome": "Espressione Cromatica",
+        "artista": "Maria Rossi",
+        "prezzo": 350,
+        "categoria": "Astratto",
+        "img" : "https://picsum.photos/200"
+    },
+    {
+        "nome": "Vibrazioni Metropolitane",
+        "artista": "Maria Rossi",
+        "prezzo": 200,
+        "categoria": "Città",
+        "img" : "https://picsum.photos/200"
+    },
+    {
+        "nome": "Sogni su Cemento",
+        "artista": "Maria Rossi",
+        "prezzo": 600,
+        "categoria": "Città",
+        "img" : "https://picsum.photos/200"
+    },
+    {
+        "nome": "Libertà Graffiti",
+        "artista": "Maria Rossi",
+        "prezzo": 450,
+        "categoria": "Astratto",
+        "img" : "https://picsum.photos/200"
+    },
+    {
+        "nome": "Onde Fluttuanti",
+        "artista": "Maria Rossi",
+        "prezzo": 350,
+        "categoria": "Paesaggio",
+        "img" : "https://picsum.photos/200"
+    },
+    {
+        "nome": "Riflessi Urbani",
+        "artista": "Maria Rossi",
+        "prezzo": 350,
+        "categoria": "Città",
+        "img" : "https://picsum.photos/200"
+    },
+    {
+        "nome": "Frammenti di Luce",
+        "artista": "Maria Rossi",
+        "prezzo": 350,
+        "categoria": "Astratto",
+        "img" : "https://picsum.photos/200"
+    },
+    {
+        "nome": "Natura Incantata",
+        "artista": "Maria Rossi",
+        "prezzo": 400,
+        "categoria": "Astratto",
+        "img" : "https://picsum.photos/200"
+    },
+    {
+        "nome": "Visioni Notturne",
+        "artista": "Maria Rossi",
+        "prezzo": 600,
+        "categoria": "Fantasy",
+        "img" : "https://picsum.photos/200"
+    },
+    {
+        "nome": "Tramonto Dorato",
+        "artista": "Maria Rossi",
+        "prezzo": 700,
+        "categoria": "Paesaggio",
+        "img" : "https://picsum.photos/200"
+    }
+]
