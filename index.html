@@ -6,6 +6,10 @@
   <title>ARTIST</title>
   <!-- FAVICON -->
   <link rel="icon" type="image/png" href="./media/Progetto senza titolo-2.png">
+  <!-- CDN SWIPER -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <!-- AoS CSS  -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- CDN Google font -->
@@ -38,7 +42,7 @@
               <a class="link_nav title nav-link text-white" aria-current="page" href="./index.html">HOME</a>
             </li>
             <li class="nav-item mx-3">
-              <a class="link_nav title nav-link text-white" href="./articoli.html">ULTIME OPERE</a>
+              <a class="link_nav title nav-link text-white" href="./articoli.html">OPERE</a>
             </li>
             <li class="nav-item mx-3">
               <a class="link_nav title nav-link text-white" href="#artisti">I NOSTRI ARTISTI</a>
@@ -77,34 +81,14 @@
     <div class="sez_opere container mb-5">
       <div id="cardsWrapper" class="row justify-content-evenly">
         <div class="col-12 mb-5 position relative">
-          <span class="angoli-opere"><h2 class="title text-white text-center fs-1">ULTIME OPERE</h2></span>
+          <span><h2 class="title text-white text-center fs-1">ULTIME OPERE</h2></span>
         </div>
-        <!-- CARD TEST -->
-        <!-- <div class="col-11 col-md-3">
-          <div class="card position-relative h-100 sfondo_card">
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger z-2">
-              NEW
-            </span>
-            <div class="overflow-hidden">
-              <img src="${annuncio.immagine}" class="img-card card-img-top" alt="...">
-            </div>
-            <div class="card-body d-flex flex-column justify-content-between">
-              <div class="d-flex justify-content-between align-items-center mb-2">
-                <h5 class="card-title title text-white mb-0">${annuncio.nome}</h5>
-                <i class="bi bi-heart fs-4 text-white "></i>
-              </div>
-              <div>
-                <p class="card-text text-white">Prezzo: ${annuncio.prezzo} €</p>
-                <a href="#" class="bottone_custom btn">Aggiungi a carrello</a>
-              </div>
-            </div>
-          </div>
-        </div> -->
+        <!-- JS mette qui le ultime 3 Card -->
       </div>
     </div>  
   </section>
   <!-- FINE SEZIONE ULTIME OPERE -->
-
+  
   <!-- SEZIONE ARTISTI  -->
   <section id="artisti">
     <div class="container overflow-hidden mt-5 mt-md-0">
@@ -121,7 +105,7 @@
           <h5 class="text-white text-center mt-3 bordo_nome">JOHN</h5>
         </div>
         <div data-aos="fade-left" data-aos-delay="300" class="col-12 col-md-3 my-5 mx-1 text-center">
-          <img class="img-category" src="https://picsum.photos/202" alt="">
+          <img class="img-category img_prova" src="https://picsum.photos/202" alt="">
           <h5 class="text-white text-center mt-3 bordo_nome">FRANK</h5>
         </div>
         <div data-aos="zoom-in-right" data-aos-delay="600" class="col-12 col-md-3 my-5 mx-1 text-center">
@@ -143,7 +127,7 @@
   
   <!-- SEZIONE NUMERI  -->
   <section id="numeri">
-    <div class="container my-5 sez_numeri">
+    <div class="container mt-5 sez_numeri">
       <div class="row justify-content-evenly">
         <div class="col-12 my-5">
           <h2 class="title text-white text-center fs-1">I NOSTRI NUMERI</h2>
@@ -165,6 +149,36 @@
   </section>
   <!-- FINE SEZIONE NUMERI  -->
   
+  <!-- SEZIONE CAROUSEL -->
+  <section>
+    <div class="container sez_carousel_mod mb-5">
+      <div class="row justify-content-center position-relative">
+        <div class="col-12 mb-5">
+          <h2 class="title text-white text-center fs-1">GALLERY</h2>
+        </div>
+        <div class="col-12 sez_carousel">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./media/2.png"/>
+              </div>
+              <div class="swiper-slide">
+                <img src="./media/3.png"/>
+              </div>
+              <div class="swiper-slide">
+                <img src="./media/4.png"/>
+              </div>
+            </div>
+            <div class="swiper-button-next cursori"></div>
+            <div class="swiper-button-prev cursori"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FINE SEZIONE CAROUSEL -->
+
   <!-- SEZIONE FOOTER -->
   <footer class="sez_footer">
     <div class="container border-top">
@@ -228,13 +242,15 @@
   </footer>
   <!-- FINE SEZIONE FOOTER -->
   
-
-
-
-
+  
+  
+  
+  
   
   <!-- BOOTSTRAP JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- SCRIPT SWIPER -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- MIO JS -->
   <script src="./main.js"></script>
   <!-- AoS JS  -->

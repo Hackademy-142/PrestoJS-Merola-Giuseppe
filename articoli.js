@@ -23,7 +23,7 @@ fetch("./opere.JSON").then((response)=> response.json()).then((data)=>{
         opereWrapper.innerHTML = ""
         array.forEach( (opere,i)=> {
             let col = document.createElement("div");
-            col.classList.add("col-11", "col-lg-5", "my-3", "mx-1")
+            col.classList.add("col-11", "col-lg-4", "my-3", "mx-1")
             col.innerHTML = `
             <div class="card position-relative h-100 sfondo_card">
             <div class="overflow-hidden">
@@ -83,21 +83,21 @@ fetch("./opere.JSON").then((response)=> response.json()).then((data)=>{
     let checksInput = document.querySelectorAll(".form-check-input")
     
     
-    function filterByCategory(){
+    function filterByCategory(array){
         let radiosBtn = Array.from(checksInput)
         let checked = radiosBtn.find( (el)=>  el.checked)
         if(checked.id == "All"){
-            createCards(data)
+            return array
         } else {
-            let filtered = data.filter( (el)=> el.categoria == checked.id )
-            createCards(filtered)
+            let filtered = array.filter( (el)=> el.categoria == checked.id )
+            return filtered
         }
     }
     
     // EVENTO CLICK RADIO BUTTON
     checksInput.forEach((input)=>{
         input.addEventListener("click", ()=>{
-            filterByCategory()
+            globalFilter()
         })
     })
     
@@ -125,14 +125,14 @@ fetch("./opere.JSON").then((response)=> response.json()).then((data)=>{
     
     // Filtro per prezzo
     
-    function filterByPrice(){
-        let filtered = data.filter( (el)=> el.prezzo <= inputPrice.value )
-        createCards(filtered)
+    function filterByPrice(array){
+        let filtered = array.filter( (el)=> el.prezzo <= inputPrice.value )
+        return filtered
     }
     
     inputPrice.addEventListener("input", ()=>{
         currentValue.innerHTML = inputPrice.value
-        filterByPrice()
+        globalFilter()
     })
 
 
@@ -142,15 +142,22 @@ fetch("./opere.JSON").then((response)=> response.json()).then((data)=>{
     
     let inputWord = document.querySelector("#inputWord")
     
-    function filterByWord(){
-        let filtered = data.filter( (el)=> el.nome.toLowerCase().includes(inputWord.value.toLowerCase()) )
-        createCards(filtered)
-        
+    function filterByWord(array){
+        let filtered = array.filter( (el)=> el.nome.toLowerCase().includes(inputWord.value.toLowerCase()) )
+        return filtered
     }
     
     inputWord.addEventListener("input", ()=>{
-        filterByWord()
+        globalFilter()
     })
+
+
+    function globalFilter() {
+        let filteredByCategory = filterByCategory(data)
+        let filteredByPrice = filterByPrice(filteredByCategory)
+        let filteredByWord = filterByWord(filteredByPrice)
+        createCards(filteredByWord)
+    }
     
     
     
@@ -158,3 +165,5 @@ fetch("./opere.JSON").then((response)=> response.json()).then((data)=>{
     
     
 })
+
+

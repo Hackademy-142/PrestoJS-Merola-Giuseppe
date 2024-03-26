@@ -43,6 +43,8 @@ body{
     background-color: var(--color-P) !important;
 }
 
+/* Sezione HERO */
+
 .img_hero{
     max-width: 90%;
     border: 2px solid var(--color-A);
@@ -60,28 +62,6 @@ body{
     position: relative;
 } 
 
-.angoli::after {
-    content: '';
-    position: absolute;
-    right: 0px;
-    bottom: 45px;
-    width: 35px;
-    height: 35px;
-    border-bottom: 4px solid var(--color-S);
-    border-right: 4px solid var(--color-S);
-}
-
-.angoli::before {
-    content: '';
-    position: absolute;
-    top: -15px;
-    left: -20px;
-    width: 35px;
-    height: 35px;
-    border-top: 4px solid var(--color-S);
-    border-left: 4px solid var(--color-S);
-} 
-
 .bottone_custom{
     color: white;
     border: 1px solid var(--color-A);
@@ -93,6 +73,8 @@ body{
     color: var(--color-S);
     transform: scale(1.1);
 }
+
+/* Sezione card */
 
 .img-card{
     transition: .5s;
@@ -114,6 +96,8 @@ body{
     background-color: var(--color-A) !important;
 }
 
+/* Sezione Artisti */
+
 .img-category{
     border: 2px solid var(--color-A);
     border-radius: 20px;
@@ -127,18 +111,79 @@ body{
     padding-bottom: 5px;  
 }
 
+
+/* Box Numeri */
+
 .sez_numeri{
-    height: 60vh;
+    height: 50%;
+    margin-bottom: 100px;
 }
 
 .box_numeri{
-    border: 2px solid var(--color-A);
-    border-radius: 20px;
     padding-top: 15px;
     height: 130px;
     width: 200px;
-    background-color: rgba(92, 92, 92, 0.5);
+    position: relative;
 }
+
+.box_numeri::after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 35px;
+    height: 35px;
+    border-bottom: 4px solid var(--color-S);
+    border-right: 4px solid var(--color-S);
+}
+
+.box_numeri::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 35px;
+    height: 35px;
+    border-top: 4px solid var(--color-S);
+    border-left: 4px solid var(--color-S);
+} 
+
+
+
+/* Sezione Carousel */
+.sez_carousel{
+    width: 80%;
+    height: 80%;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.cursori{
+    color: var(--color-A);
+}
+
+.swiper-pagination-bullet{
+    background-color: var(--color-A);
+}
+
+.sez_sep_carousel{
+    gap: 20px;
+}
+
+/* Footer */
 
 .lista_footer{
     text-decoration: none;
@@ -147,6 +192,8 @@ body{
 .sez_footer {
     margin-top: 300px;
 }
+
+/* Sezione filtri pagina opere */
 
 .point-color::-webkit-slider-thumb{
     background-color: var(--color-A);
@@ -201,3 +248,37 @@ body{
         margin-top: 20px;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .sez_carousel{
+        width: 100%;
+        height: 100%;
+    }
+    .sez_carousel_mod{
+        height: 10vh;
+    }
+  }
+
+@media only screen and (min-width: 768px) {
+    .angoli::after {
+        content: '';
+        position: absolute;
+        right: 0px;
+        bottom: 45px;
+        width: 35px;
+        height: 35px;
+        border-bottom: 4px solid var(--color-S);
+        border-right: 4px solid var(--color-S);
+    }
+    
+    .angoli::before {
+        content: '';
+        position: absolute;
+        top: -15px;
+        left: -20px;
+        width: 35px;
+        height: 35px;
+        border-top: 4px solid var(--color-S);
+        border-left: 4px solid var(--color-S);
+    } 
+  }
