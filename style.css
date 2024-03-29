@@ -97,11 +97,20 @@ body{
 }
 
 /* Sezione Artisti */
-
+/* 
 .img-category{
     border: 2px solid var(--color-A);
     border-radius: 20px;
     padding: 4px;
+} */
+
+
+.scritta_artista{
+    position: absolute;
+    bottom: 0%;
+    left: 12%;
+    font-size: xx-large;
+    text-shadow: 2px 2px 5px var(--color-A);
 }
 
 .bordo_nome{
