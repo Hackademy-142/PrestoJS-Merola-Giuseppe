@@ -225,6 +225,11 @@ body{
     box-shadow: none;
 }
 
+.posizione_colonna{
+    position: sticky;
+    top: 200px;
+}
+
 
 
 
